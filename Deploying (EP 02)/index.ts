@@ -21,6 +21,12 @@ app.get("/youtube", (req, res) => {
     res.send("<h2>Chai aur Code Backend Series</h2>")
 })
 
+app.get("/github", (req, res) => {
+    res.json({
+        message: "Removed!, due to privacy concerns"
+    })
+})
+
 app.listen(process.env.PORT, () => {
     console.log(`Server is running on port: ${process.env.PORT}`);
     console.log(`Access it on http://localhost:${process.env.PORT}`);
